@@ -1,0 +1,9 @@
+{
+	"app": [
+		{
+			"name": "ReadWorld",
+			"script": "yarn",
+			"args": "start"
+		}
+	]
+}
