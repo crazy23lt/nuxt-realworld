@@ -133,9 +133,6 @@ import { getTags } from "@/api/tag.js";
 export default {
 	// ↓ pagename ↓
 	name: "Home",
-	computed: {
-		...mapState(["auth"])
-	},
 	// ↓ 服务点请求主要数据 服务端阶段无法获取 this 使用 context:{app} ↓
 	async asyncData({ query, store }) {
 		try {
@@ -172,6 +169,9 @@ export default {
 		} catch (err) {
 			console.log("err :>> ", err);
 		}
+	},
+	computed: {
+		...mapState(["auth"])
 	},
 	watchQuery: ["page", "tag", "tab"],
 	methods: {
