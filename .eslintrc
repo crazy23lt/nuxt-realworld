@@ -1,0 +1,23 @@
+{
+	"root": true,
+	"parserOptions": {
+		"parser": "@babel/eslint-parser",
+		"sourceType": "module",
+		"ecmaVersion": "latest",
+		"requireConfigFile": false
+	},
+	"env": {
+		"browser": true,
+		"node": true,
+		"commonjs": true,
+		"es2022": true
+	},
+	"extends": [
+		"@nuxtjs",
+		"eslint:recommended", // 继承 ESLint 的规则集
+		"plugin:prettier/recommended" // 推荐使用 prettier 格式化
+	],
+	"rules": {
+		"prettier/prettier": "error"
+	}
+}
