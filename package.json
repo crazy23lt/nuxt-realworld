@@ -25,7 +25,6 @@
 		"dev": "nuxt",
 		"build": "nuxt build",
 		"start": "nuxt start",
-		"prepare": "husky install",
 		"commit": "cz"
 	},
 	"config": {
@@ -49,23 +48,23 @@
 		"babel-eslint": "^10.1.0",
 		"babel-plugin-component": "^1.1.1",
 		"commitizen": "^4.2.4",
-		"cookieparser": "^0.1.0",
 		"cz-conventional-changelog-zh": "^0.0.2",
-		"dayjs": "^1.11.1",
-		"element-ui": "^2.15.8",
 		"eslint": "^8.14.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-nuxt": "^3.2.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-vue": "^8.7.1",
 		"husky": "^7.0.4",
-		"js-cookie": "^3.0.1",
 		"lint-staged": "^12.4.0",
-		"markdown-it": "^13.0.0",
-		"nuxt": "^2.15.8",
 		"prettier": "2.6.2"
 	},
 	"dependencies": {
-		"axios": "^0.27.2"
+		"axios": "^0.27.2",
+		"cookieparser": "^0.1.0",
+		"dayjs": "^1.11.1",
+		"element-ui": "^2.15.8",
+		"js-cookie": "^3.0.1",
+		"markdown-it": "^13.0.0",
+		"nuxt": "^2.15.8"
 	}
 }

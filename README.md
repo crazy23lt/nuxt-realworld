@@ -2,6 +2,7 @@
 
 - [readworld-demo](https://demo.realworld.io/#/)
 
+开发环境  添加 		"prepare": "husky install",
 ## 导入页面模板
  - 导入样式资源
  - 配置布局组件
