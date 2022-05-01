@@ -42,18 +42,3 @@ jobs:
           asset_path: ./release.tgz
           asset_name: release.tgz
           asset_content_type: application/x-tgz
-
-      # 部署到服务器
-      - name: Deploy
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
-          script: |
-            cd /root/realworld-nuxtjs
-            wget https://github.com/crazy23lt/nuxt-realworld/releases/latest/download/release.tgz -O release.tgz
-            tar zxvf release.tgz
-            yarn install --production
-            pm2 reload pm2.config.json
